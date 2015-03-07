@@ -1,0 +1,20 @@
+$('#search').on('click', function() {
+    var term = $('#term').val();
+    $('#term').val('');
+    $.ajax({
+      url: "https://api.themoviedb.org/3/movie/" + term + "?api_key=c94e8e8f91a96ebba3962e3aeffebf89",
+      dataType: 'jsonp',
+      success: function(data) {
+        $('#info').append(
+          "<li>Film name: " + data.original_title +
+          "<br>Release date: " + data.release_date +
+          "<br>Spoken Languages: " + data.spoken_languages [1] +
+          "<br>Tag line: "  + data.tagline +
+          "<br>Status: " + data.status +
+          "<br>Vote_count: " + data.vote_count +
+          "</li>"
+        )
+      }
+    })
+  })
+})

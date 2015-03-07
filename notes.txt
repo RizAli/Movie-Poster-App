@@ -1,0 +1,33 @@
+Connecting an App
+------------------
+Passing the request url to the ajax method
+--------------------------------------------
+website used:
+http://docs.themoviedb.apiary.io/#introduction/status-codes
+
+Every request needs a valid API key and you can set this value as an HTTP parameter. A full request example looks like so:
+https://api.themoviedb.org/3/movie/550?api_key=##
+
+dataType: "jsonp"
+
+
+Getting an API key:
+---------------------
+signed up on the following website
+https://www.themoviedb.org/documentation/api
+
+getting the Script source: from W3 school website:
+---------------------------------------------------
+http://www.w3schools.com/jquery/jquery_get_started.asp
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+
+
+
+Google search: "jquery ajax method"
+------------------------------------
+found on the following url
+http://api.jquery.com/jquery.ajax/
+
+
+
